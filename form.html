@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section>
+    <h2>Create new Walk Event</h2>
+    <form id="eventForm" action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php">
+        <div>
+            Name of Walk:<br>
+            <input type="text" name="nameOfWalk"><br>
+        </div>
+        <div>
+            Date:<br>
+            <input type="text" name="date"><br>
+        </div>
+        <div>
+            Start Time:<br>
+            <input type="text" name="startTime"><br>
+        </div>
+        <div>
+            End Time:<br>
+            <input type="text" name="endTime"><br>
+        </div>
+        <div>
+            Meeting Point:<br>
+            <input type="text" name="meetingPoint"><br>
+        </div>
+        <div>
+            Distance in Kilometers:<br>
+            <input type="text" name="distanceInKilometers"><br>
+        </div>
+        <div>
+            Name of Leader:<br>
+            <input type="text" name="nameOfLeader"><br>
+        </div>
+        <div>
+            Comments:<br>
+            <input type="text" name="comments"><br>
+        </div>
+        <input hidden type="text" id="sessionId" name="sessionId"><br>
+    </form>
+    <div class="buttons">
+        <button class="back_button">back</button>
+        <button type="submit" form="eventForm" class="save_button" value="Submit">create</button>
+    </div>
+</section>
+
+
+</body>
+</html>
+
