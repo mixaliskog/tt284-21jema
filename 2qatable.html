@@ -1,10 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Walk Events Screen</title>
+    <link rel="stylesheet" href="2qastyle.css">
 </head>
 <body>
-$END$
+<header>
+    <h1> OU Walking Club</h1>
+    Logged in as: admin
+    <ul>
+        <li><a class="active" href="#walk_events">Walk Events</a></li>
+        <li><a href="#other_events">Other Events</a></li>
+        <li><a href="#membership">Membership</a></li>
+        <li><a href="#new_items">New Items</a></li>
+        <li><a href="#announcements">Announcements</a></li>
+    </ul>
+    <button>logout</button>
+</header>
+<select name="filters">
+    <option selected="selected" value="filters">filters</option>
+    <option value="name_of_walk">Name of Walk</option>
+    <option value="date">Date</option>
+    <option value="start_time">Start time</option>
+    <option value="end_time">End time</option>
+    <option value="meeting_point">Meeting point</option>
+    <option value="distance_in_kilometers">Distance in kilometers</option>
+    <option value="name_of_leader">Name of leader</option>
+    <option value="comments">Comments</option>
+    <option value="status">Status</option>
+</select>
+<input name="filter">
+<button>search</button>
+<button onclick="document.location='2qaform.html'">Create new Event</button>
+<h2>Walk Events</h2>
+<table class="walk_events">
+    <tr>
+        <th>Name of Walk</th>
+        <th>Date</th>
+        <th>Start time</th>
+        <th>End time</th>
+        <th>Meeting point</th>
+        <th>Distance in kilometers</th>
+        <th>Name of leader</th>
+        <th>Comments</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Watcombe to Sheldon</td>
+        <td>23/02/2022</td>
+        <td>10.30am</td>
+        <td>15.30pm</td>
+        <td>Watcombe Car Park</td>
+        <td>9</td>
+        <td>Helen Smith</td>
+        <td>Grade A walk with steep hills</td>
+        <td>Proposed</td>
+    </tr>
+    <tr>
+        <td>Watcombe to Sheldon</td>
+        <td>23/02/2022</td>
+        <td>10.30am</td>
+        <td>15.30pm</td>
+        <td>Watcombe Car Park</td>
+        <td>9</td>
+        <td>Helen Smith</td>
+        <td>Grade A walk with steep hills</td>
+        <td>Proposed</td>
+    </tr>
+    <tr>
+        <td>Watcombe to Sheldon</td>
+        <td>23/02/2022</td>
+        <td>10.30am</td>
+        <td>15.30pm</td>
+        <td>Watcombe Car Park</td>
+        <td>9</td>
+        <td>Helen Smith</td>
+        <td>Grade A walk with steep hills</td>
+        <td>Proposed</td>
+    </tr>
+    <tr>
+        <td>Watcombe to Sheldon</td>
+        <td>23/02/2022</td>
+        <td>10.30am</td>
+        <td>15.30pm</td>
+        <td>Watcombe Car Park</td>
+        <td>9</td>
+        <td>Helen Smith</td>
+        <td>Grade A walk with steep hills</td>
+        <td>Proposed</td>
+    </tr>
+    <tr>
+        <td>Watcombe to Sheldon</td>
+        <td>23/02/2022</td>
+        <td>10.30am</td>
+        <td>15.30pm</td>
+        <td>Watcombe Car Park</td>
+        <td>9</td>
+        <td>Helen Smith</td>
+        <td>Grade A walk with steep hills</td>
+        <td>Proposed</td>
+    </tr>
+    <tr>
+        <td>Watcombe to Sheldon</td>
+        <td>23/02/2022</td>
+        <td>10.30am</td>
+        <td>15.30pm</td>
+        <td>Watcombe Car Park</td>
+        <td>9</td>
+        <td>Helen Smith</td>
+        <td>Grade A walk with steep hills</td>
+        <td>Proposed</td>
+    </tr>
+</table>
+Select Page
+<select name="pagination">
+    <option selected="selected" value="page">1</option>
+    <option value="page">2</option>
+    <option value="page">3</option>
+</select>
 </body>
 </html>
