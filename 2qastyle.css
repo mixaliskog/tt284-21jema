@@ -9,10 +9,6 @@ section {
     display: inline-block;
     background-color: rgba(206, 246, 222, 0.82);
 }
-div {
-    text-align: left;
-    margin-left: 15%;
-}
 input{
 background-color: antiquewhite;
 }
@@ -26,9 +22,9 @@ input[type=text]:focus {
 }
 
 button {
-    /*background-color: #25bada;*/
-    border: none;
-    color: white;
+    background-color: white;
+    color: black;
+    border: 2px solid #25bada;
     padding: 5px 15px;
     text-align: center;
     text-decoration: none;
@@ -39,13 +35,26 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: #25bada;
+    color: white;
+}
+
 .save_button {
     background-color: white;
     color: black;
     border: 2px solid #70ee5c;
 }
 
-.save_button:hover {
+.create_button {
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 10px;
+    border: 2px solid #70ee5c;
+}
+
+.save_button:hover ,.create_button:hover{
     background-color: #70ee5c;
     color: white;
 }
@@ -57,14 +66,6 @@ button {
 }
 
 .back_button:hover {background-color: #818080;}
-
-
-.buttons {
-    display: flex;
-    justify-content: right;
-    flex-direction: row;
-    align-items: center;
-}
 
 .walk_events {
     font-family: Arial, Helvetica, sans-serif;
@@ -85,8 +86,36 @@ button {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #04AA6D;
+    background-color: #5d8577;
     color: white;
+}
+
+.pagination {
+    position: absolute;
+    right: 10px;
+}
+
+.current_user {
+    position: absolute;
+    text-align: left;
+    margin-left: 0;
+}
+
+.logout_button {
+    position: fixed;
+    right: 10px;
+    text-align: right;
+    margin-left: 0;
+}
+
+.table_bar {
+    display: flex;
+    flex-direction: row ;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row ;
 }
 
 ul {

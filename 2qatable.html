@@ -6,9 +6,10 @@
     <link rel="stylesheet" href="2qastyle.css">
 </head>
 <body>
+<div class="current_user">Logged in as: admin</div>
+<button class="logout_button">logout</button>
+<h1> OU Walking Club</h1>
 <header>
-    <h1> OU Walking Club</h1>
-    Logged in as: admin
     <ul>
         <li><a class="active" href="#walk_events">Walk Events</a></li>
         <li><a href="#other_events">Other Events</a></li>
@@ -16,24 +17,25 @@
         <li><a href="#new_items">New Items</a></li>
         <li><a href="#announcements">Announcements</a></li>
     </ul>
-    <button>logout</button>
 </header>
-<select name="filters">
-    <option selected="selected" value="filters">filters</option>
-    <option value="name_of_walk">Name of Walk</option>
-    <option value="date">Date</option>
-    <option value="start_time">Start time</option>
-    <option value="end_time">End time</option>
-    <option value="meeting_point">Meeting point</option>
-    <option value="distance_in_kilometers">Distance in kilometers</option>
-    <option value="name_of_leader">Name of leader</option>
-    <option value="comments">Comments</option>
-    <option value="status">Status</option>
-</select>
-<input name="filter">
-<button>search</button>
-<button onclick="document.location='2qaform.html'">Create new Event</button>
 <h2>Walk Events</h2>
+<div class="table_bar">
+    <select name="filters">
+        <option selected="selected" value="filters">filters</option>
+        <option value="name_of_walk">Name of Walk</option>
+        <option value="date">Date</option>
+        <option value="start_time">Start time</option>
+        <option value="end_time">End time</option>
+        <option value="meeting_point">Meeting point</option>
+        <option value="distance_in_kilometers">Distance in kilometers</option>
+        <option value="name_of_leader">Name of leader</option>
+        <option value="comments">Comments</option>
+        <option value="status">Status</option>
+    </select>
+    <input name="filter">
+    <button>search</button>
+    <button onclick="document.location='2qaform.html'" class="create_button">Create new Event</button>
+</div>
 <table class="walk_events">
     <tr>
         <th>Name of Walk</th>
@@ -113,11 +115,13 @@
         <td>Proposed</td>
     </tr>
 </table>
-Select Page
-<select name="pagination">
-    <option selected="selected" value="page">1</option>
-    <option value="page">2</option>
-    <option value="page">3</option>
-</select>
+<div class="pagination">
+    Select Page
+    <select name="pagination">
+        <option selected="selected" value="page">1</option>
+        <option value="page">2</option>
+        <option value="page">3</option>
+    </select>
+</div>
 </body>
 </html>
