@@ -1,17 +1,13 @@
-body {
+h2, h1 {
     text-align: center;
 }
+
 * {box-sizing: border-box;}
-section {
-    margin: 10px;
-    padding: 10px;
-    border-style: solid;
-    display: inline-block;
-    background-color: rgba(206, 246, 222, 0.82);
-}
+
 input{
 background-color: antiquewhite;
 }
+
 
 header {
     align-content: center;
@@ -111,6 +107,13 @@ button:hover {
 .table_bar {
     display: flex;
     flex-direction: row ;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
 }
 
 .nav_bar {
